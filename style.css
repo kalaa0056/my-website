@@ -1,0 +1,221 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+  position: absolute
+    ; right: -50px
+      ; top: -90px
+        ; height:400px
+    ; width: auto;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 200px;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+.hero-section {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    padding: 80px 0;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.services-section, .gallery-section, .contact-section {
+    padding: 40px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    perspective: 1000px;
+}
+
+h2 {
+    color: #444;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform-style: preserve-3d;
+}
+
+.service-item:hover {
+    transform: rotateY(10deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.service-item:hover .service-icon {
+    transform: rotateY(-10deg);
+}
+
+.service-item h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #007BFF;
+}
+
+.service-item p {
+    color: #555;
+    font-size: 1.2em;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 20%;  /* هنا حددنا عرض العنصر gallery-item بـ 20% لتصغير الصور */
+}
+
+.gallery-item img {
+    width: 100%;  /* تأكد من أن الصور تأخذ العرض الكامل للعنصر */
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #007BFF;
+}
+
+.contact-form {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transform: translateZ(0);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    color: #007BFF;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: transform 0.3s;
+    font-size: 1.1em;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    transform: translateZ(10px);
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor
